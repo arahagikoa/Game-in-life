@@ -1,0 +1,3 @@
+C:\Users\kmlkr\OneDrive\Pulpit\projects\cpp-lol\GameInLife\x64\Debug\GameInLife.exe
+C:\Users\kmlkr\OneDrive\Pulpit\projects\cpp-lol\GameInLife\x64\Debug\GameInLife.vcxproj.CopyComplete
+C:\Users\kmlkr\OneDrive\Pulpit\projects\cpp-lol\GameInLife\x64\Debug\SDL2d.dll
