@@ -31,7 +31,7 @@ void CellMap::SetCell(unsigned int x, unsigned int y)
     xoleft = (x == 0) ? w - 1 : -1;
     xoright = (x == (w - 1)) ? -(w - 1) : 1;
     yoabove = (y == 0) ? length_in_bytes - w : -w;
-    yobelow = (y == (h - 1)) ? (length_in_bytes - w) : w;
+    yobelow = (y == (h - 1)) ? (-1) * (length_in_bytes - w) : w;
 
     *(cell_ptr) |= 0x01;
 
@@ -54,7 +54,7 @@ void CellMap::ClearCell(unsigned int x, unsigned int y)
     xoleft = (x == 0) ? w - 1 : -1;
     xoright = (x == (w - 1)) ? -(w - 1) : 1;
     yoabove = (y == 0) ? length_in_bytes - w : -w;
-    yobelow = (y == (h - 1)) ? (length_in_bytes - w) : w;
+    yobelow = (y == (h - 1)) ? (-1)*(length_in_bytes - w) : w;
 
     *(cell_ptr) &= ~0x01;
 
