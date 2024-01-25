@@ -139,7 +139,7 @@ void CellMap::Init()
     {
         x = std::rand() % (width - 1);
         y = std::rand() % (height - 1);
-        if (std::rand() % 100 < 40 && CellState(x, y) == 0)
+        if (std::rand() % 100 < 70 && CellState(x, y) == 0)
             SetCell(x, y);
     } while (--init_length);
 }

@@ -5,12 +5,12 @@
 #include "cell_map.h"
 #define OFF_COLOUR 0x00
 #define ON_COLOUR 0xFF
-#define LIMIT_RATE 0
-#define TICK_RATE 30
+#define LIMIT_RATE 5
+#define TICK_RATE 80
 
 
-unsigned int cellmap_width = 400;
-unsigned int cellmap_height = 200;
+unsigned int cellmap_width = 160;
+unsigned int cellmap_height = 130;
 unsigned int cell_size = 5;
 
 
