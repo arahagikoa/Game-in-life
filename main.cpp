@@ -6,13 +6,12 @@
 #define OFF_COLOUR 0x00
 #define ON_COLOUR 0xFF
 #define LIMIT_RATE 0
-#define TICK_RATE 50
+#define TICK_RATE 30
 
 
-unsigned int cellmap_width = 500;
-unsigned int cellmap_height = 500;
-
-unsigned int cell_size = 1;
+unsigned int cellmap_width = 400;
+unsigned int cellmap_height = 200;
+unsigned int cell_size = 5;
 
 
 SDL_Window* window = NULL;
@@ -36,7 +35,6 @@ void DrawCell(unsigned int x, unsigned int y, unsigned int colour)
 		pixel_ptr += s_width * 4;
 	}
 }
-
 int WinMain(int argc, char* argv[])
 {
 	SDL_Init(SDL_INIT_VIDEO);
